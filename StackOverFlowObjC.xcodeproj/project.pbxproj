@@ -17,6 +17,8 @@
 		4CDDAC8624512E6C0016DD06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDAC8524512E6C0016DD06 /* main.m */; };
 		4CDDAC9024512E6C0016DD06 /* StackOverFlowObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDAC8F24512E6C0016DD06 /* StackOverFlowObjCTests.m */; };
 		4CDDAC9B24512E6C0016DD06 /* StackOverFlowObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDAC9A24512E6C0016DD06 /* StackOverFlowObjCUITests.m */; };
+		4CDDACAE24512FD10016DD06 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDACAC24512FD10016DD06 /* CustomCell.m */; };
+		4CDDACAF24512FD10016DD06 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDDACAD24512FD10016DD06 /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		4CDDAC9624512E6C0016DD06 /* StackOverFlowObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverFlowObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDDAC9A24512E6C0016DD06 /* StackOverFlowObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverFlowObjCUITests.m; sourceTree = "<group>"; };
 		4CDDAC9C24512E6C0016DD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CDDACAB24512FD10016DD06 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		4CDDACAC24512FD10016DD06 /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		4CDDACAD24512FD10016DD06 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,9 @@
 				4CDDAC8424512E6C0016DD06 /* Info.plist */,
 				4CDDAC8524512E6C0016DD06 /* main.m */,
 				4CDDAC7C24512E640016DD06 /* StackOverFlowObjC.xcdatamodeld */,
+				4CDDACAB24512FD10016DD06 /* CustomCell.h */,
+				4CDDACAC24512FD10016DD06 /* CustomCell.m */,
+				4CDDACAD24512FD10016DD06 /* CustomCell.xib */,
 			);
 			path = StackOverFlowObjC;
 			sourceTree = "<group>";
@@ -245,6 +253,7 @@
 			files = (
 				4CDDAC8324512E6C0016DD06 /* LaunchScreen.storyboard in Resources */,
 				4CDDAC8024512E6C0016DD06 /* Assets.xcassets in Resources */,
+				4CDDACAF24512FD10016DD06 /* CustomCell.xib in Resources */,
 				4CDDAC7B24512E640016DD06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +281,7 @@
 			files = (
 				4CDDAC8624512E6C0016DD06 /* main.m in Sources */,
 				4CDDAC7824512E640016DD06 /* ViewController.m in Sources */,
+				4CDDACAE24512FD10016DD06 /* CustomCell.m in Sources */,
 				4CDDAC7224512E640016DD06 /* AppDelegate.m in Sources */,
 				4CDDAC7E24512E640016DD06 /* StackOverFlowObjC.xcdatamodeld in Sources */,
 				4CDDAC7524512E640016DD06 /* SceneDelegate.m in Sources */,
