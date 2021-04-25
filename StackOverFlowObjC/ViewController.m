@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "CustomCell.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -18,37 +19,22 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+}
 
-	self.tableView.delegate = self;
-	self.tableView.dataSource = self;
-
-	[self.tableView registerClass:[CustomCell class] forCellReuseIdentifier:@"CustomCell"];
-	[self.tableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil] forCellReuseIdentifier:@"CustomCell"];
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+		self.textView.text = @"a";
+	});
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+		self.textView.text = @"5";
+	});
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 10 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+		self.textView.text = @"10";
+	});
 }
 
 
-- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    CustomCell *cell;
-
-	cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
-
-    [cell.cutomButton addTarget:self action:@selector(btnPurchaseOrderClicked:) forControlEvents:UIControlEventTouchUpInside];
-
-    return cell;
-
-}
-
-- (void)btnPurchaseOrderClicked:(id)sender {
-	NSLog(@"Button pressed");
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 1;
-}
-
-- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 5;
-}
 
 
 @end

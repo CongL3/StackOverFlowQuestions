@@ -15,26 +15,9 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFJ-y4-GON">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <state key="normal" title="AAAAAAAAAAAAAA">
-                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                        </state>
-                    </button>
-                </subviews>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="JFJ-y4-GON" secondAttribute="bottom" id="07x-2L-zkP"/>
-                    <constraint firstItem="JFJ-y4-GON" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8qg-lG-udC"/>
-                    <constraint firstItem="JFJ-y4-GON" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QgM-dD-erT"/>
-                    <constraint firstAttribute="trailing" secondItem="JFJ-y4-GON" secondAttribute="trailing" id="l1Q-lM-qzt"/>
-                </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
-            <connections>
-                <outlet property="cutomButton" destination="JFJ-y4-GON" id="Ng2-NJ-PEg"/>
-            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="141.29464285714286"/>
         </tableViewCell>
     </objects>

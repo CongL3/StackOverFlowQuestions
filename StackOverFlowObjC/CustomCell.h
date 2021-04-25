@@ -11,7 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIButton *cutomButton;
+@property (strong, nonatomic) IBOutlet UIButton *btnOrder;
+@property (strong, nonatomic) NSMutableArray *btnArray;
+
+- (void)configure;
 
 @end
 
